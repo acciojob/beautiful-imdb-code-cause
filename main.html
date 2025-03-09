@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful IMDb Movie Detail</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .moviePic {
+            height: 400px;
+            width: 270px;
+            opacity: 0.9;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .moviePic:hover {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .movieDetail {
+            position: relative;
+            top: 20px;
+            width: 80%;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <img src="https://via.placeholder.com/270x400" alt="Movie Poster" class="moviePic">
+        <p class="movieDetail">
+            An epic adventure unfolds as a young hero embarks on a quest to save the kingdom from an ancient evil. With breathtaking visuals and a captivating storyline, this movie will leave you on the edge of your seat.
+        </p>
+    </div>
 </body>
-
 </html>
